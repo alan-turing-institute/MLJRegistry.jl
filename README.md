@@ -12,8 +12,8 @@ immediately available for use by MLJ. However, models in
 *registered* packages are discoverable by all MLJ users - whether or not the packages have been imported - through MLJ's
 task interface.
 
-[![Build
-Status](https://travis-ci.com/ablaom/MLJRegistery.jl.svg?branch=master)](https://travis-ci.com/ablaom/MLJRegistry.jl)
+<!-- [![Build -->
+<!-- Status](https://travis-ci.com/ablaom/MLJRegistery.jl.svg?branch=master)](https://travis-ci.com/ablaom/MLJRegistry.jl) -->
 
 
 ### Background
@@ -28,5 +28,5 @@ for more on MLJ.
 
 ### How to register a package
 
-TODO
+For now, new packages can be registered by creating an issue on this repo
 
