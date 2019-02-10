@@ -1,0 +1,336 @@
+
+[MultivariateStats.RidgeRegressor]
+":package_uuid" = "6f286f6a-111f-5878-ab1e-185364afe411"
+":load_path" = "MLJ.RidgeRegressor"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/JuliaStats/MultivariateStats.jl"
+":package_name" = "MultivariateStats"
+":output_is_probabilistic" = ":no"
+":name" = "RidgeRegressor"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":supervised"
+
+[MultivariateStats.PCA]
+":package_uuid" = "6f286f6a-111f-5878-ab1e-185364afe411"
+":load_path" = "MLJ.PCA"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/JuliaStats/MultivariateStats.jl"
+":package_name" = "MultivariateStats"
+":output_is_probabilistic" = ":unknown"
+":name" = "PCA"
+":output_kind" = ":continuous"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":unsupervised"
+
+[GaussianProcesses.GPClassifier]
+":package_uuid" = "891a1506-143c-57d2-908e-e1f8e92e6de9"
+":load_path" = "MLJ.GPClassifier"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/STOR-i/GaussianProcesses.jl"
+":package_name" = "GaussianProcesses"
+":output_is_probabilistic" = ":no"
+":name" = "GPClassifier"
+":output_kind" = ":ordered_factor_finite"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":supervised"
+
+[DecisionTree.DecisionTreeClassifier]
+":package_uuid" = "7806a523-6efd-50cb-b5f6-3fa6f1930dbb"
+":load_path" = "MLJ.DecisionTreeClassifier"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/bensadeghi/DecisionTree.jl"
+":package_name" = "DecisionTree"
+":output_is_probabilistic" = ":yes"
+":name" = "DecisionTreeClassifier"
+":output_kind" = ":multiclass"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":supervised"
+
+[unknown.SimpleDeterministicCompositeModel]
+":package_uuid" = "unknown"
+":load_path" = "unknown"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "unknown"
+":package_name" = "unknown"
+":output_is_probabilistic" = ":no"
+":name" = "SimpleDeterministicCompositeModel"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":supervised"
+
+[unknown.Resampler]
+":package_uuid" = "unknown"
+":load_path" = "unknown"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "unknown"
+":package_name" = "unknown"
+":output_is_probabilistic" = ":unknown"
+":name" = "Resampler"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":other"
+
+[MLJ.ConstantClassifier]
+":package_uuid" = ""
+":load_path" = "MLJ.ConstantClassifier"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":yes"
+":name" = "ConstantClassifier"
+":output_kind" = ":multiclass"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":supervised"
+
+[MLJ.Standardizer]
+":package_uuid" = ""
+":load_path" = "MLJ.Standardizer"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "Standardizer"
+":output_kind" = ":mixed"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":unsupervised"
+
+[MLJ.DeterministicConstantClassifier]
+":package_uuid" = ""
+":load_path" = "MLJ.DeterministicConstantClassifier"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":no"
+":name" = "DeterministicConstantClassifier"
+":output_kind" = ":multiclass"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":supervised"
+
+[MLJ.DeterministicEnsembleModel]
+":package_uuid" = ""
+":load_path" = "MLJ.DeterministicEnsembleModel"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":no"
+":name" = "DeterministicEnsembleModel"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":supervised"
+
+[MLJ.OneHotEncoder]
+":package_uuid" = ""
+":load_path" = "MLJ.OneHotEncoder"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "OneHotEncoder"
+":output_kind" = ":mixed"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":unsupervised"
+
+[MLJ.ToIntTransformer]
+":package_uuid" = ""
+":load_path" = "MLJ.ToIntTransformer"
+":input_quantity" = ":univariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "ToIntTransformer"
+":output_kind" = ":multiclass"
+":output_quantity" = ":univariate"
+":input_kinds" = [":multiclass", ":ordered_factor_finite"]
+":learning_type" = ":unsupervised"
+
+[MLJ.ProbabilisticTunedModel]
+":package_uuid" = ""
+":load_path" = "MLJ.ProbabilisticTunedModel"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":yes"
+":name" = "ProbabilisticTunedModel"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":supervised"
+
+[MLJ.KNNRegressor]
+":package_uuid" = ""
+":load_path" = "MLJ.KNNRegressor"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "unknown"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":no"
+":name" = "KNNRegressor"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":supervised"
+
+[MLJ.UnivariateBoxCoxTransformer]
+":package_uuid" = ""
+":load_path" = "MLJ.UnivariateBoxCoxTransformer"
+":input_quantity" = ":univariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "UnivariateBoxCoxTransformer"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":unsupervised"
+
+[MLJ.ConstantRegressor]
+":package_uuid" = ""
+":load_path" = "MLJ.ConstantRegressor"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":yes"
+":name" = "ConstantRegressor"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":supervised"
+
+[MLJ.FeatureSelector]
+":package_uuid" = ""
+":load_path" = "MLJ.FeatureSelector"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "FeatureSelector"
+":output_kind" = ":mixed"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":unsupervised"
+
+[MLJ.DeterministicTunedModel]
+":package_uuid" = ""
+":load_path" = "MLJ.DeterministicTunedModel"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":no"
+":name" = "DeterministicTunedModel"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":supervised"
+
+[MLJ.DeterministicConstantRegressor]
+":package_uuid" = "https://github.com/alan-turing-institute/MLJ.jl"
+":load_path" = "MLJ.ConstantRegressor"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":no"
+":name" = "DeterministicConstantRegressor"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous", ":multiclass", ":ordered_factor_finite", ":ordered_factor_infinite", ":missing"]
+":learning_type" = ":supervised"
+
+[MLJ.ProbabilisticEnsembleModel]
+":package_uuid" = ""
+":load_path" = "MLJ.ProbabilisticEnsembleModel"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":unknown"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":yes"
+":name" = "ProbabilisticEnsembleModel"
+":output_kind" = ":unknown"
+":output_quantity" = ":univariate"
+":input_kinds" = []
+":learning_type" = ":supervised"
+
+[MLJ.UnivariateStandardizer]
+":package_uuid" = ""
+":load_path" = "MLJ.UnivariateStandardizer"
+":input_quantity" = ":univariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/alan-turing-institute/MLJ.jl"
+":package_name" = "MLJ"
+":output_is_probabilistic" = ":unknown"
+":name" = "UnivariateStandardizer"
+":output_kind" = ":multiclass"
+":output_quantity" = ":univariate"
+":input_kinds" = [":multiclass", ":ordered_factor_finite"]
+":learning_type" = ":unsupervised"
+
+[Clustering.KMeans]
+":package_uuid" = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+":load_path" = "MLJ.KMeans"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/JuliaStats/Clustering.jl"
+":package_name" = "Clustering"
+":output_is_probabilistic" = ":unknown"
+":name" = "KMeans"
+":output_kind" = ":continuous"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":unsupervised"
+
+[Clustering.KMedoids]
+":package_uuid" = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+":load_path" = "MLJ.KMedoids"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/JuliaStats/Clustering.jl"
+":package_name" = "Clustering"
+":output_is_probabilistic" = ":unknown"
+":name" = "KMedoids"
+":output_kind" = ":continuous"
+":output_quantity" = ":multivariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":unsupervised"
+
+[GLM.OLSRegressor]
+":package_uuid" = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
+":load_path" = "MLJ.OLS"
+":input_quantity" = ":multivariate"
+":is_pure_julia" = ":yes"
+":package_url" = "https://github.com/JuliaStats/GLM.jl"
+":package_name" = "GLM"
+":output_is_probabilistic" = ":no"
+":name" = "OLSRegressor"
+":output_kind" = ":continuous"
+":output_quantity" = ":univariate"
+":input_kinds" = [":continuous"]
+":learning_type" = ":supervised"

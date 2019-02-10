@@ -1,0 +1,6 @@
+authors = ["Anthony D. Blaom <anthony.blaom@gmail.com>"]
+name = "MLJRegistry"
+uuid = "a41df0fa-2d8a-11e9-1bfb-8110be68cd3e"
+version = "0.1.0"
+
+[deps]
