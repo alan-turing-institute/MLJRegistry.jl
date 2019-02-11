@@ -13,7 +13,7 @@ immediately available for use by MLJ. However, models in
 task interface.
 
 [![Build
-Status](https://travis-ci.com/alan-turing-institute/MLJRegistery.jl.svg?branch=master)](https://travis-ci.com/ablaom/MLJRegistry.jl)
+Status](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl.svg?branch=master)](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl)
 
 
 ### Background
