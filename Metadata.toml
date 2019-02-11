@@ -43,7 +43,7 @@
 
 [DecisionTree.DecisionTreeClassifier]
 ":package_uuid" = "7806a523-6efd-50cb-b5f6-3fa6f1930dbb"
-":load_path" = "MLJ.DecisionTreeClassifier"
+":load_path" = "MLJModels.DecisionTree_.DecisionTreeClassifier"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/bensadeghi/DecisionTree.jl"
