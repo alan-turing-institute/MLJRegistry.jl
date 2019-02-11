@@ -28,5 +28,5 @@ for more on MLJ.
 
 ### How to register a package
 
-For now, new packages can be registered by creating an issue on this repo
+For now, new packages can be registered by creating an issue on this repository.
 
