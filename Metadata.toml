@@ -29,7 +29,7 @@
 
 [GaussianProcesses.GPClassifier]
 ":package_uuid" = "891a1506-143c-57d2-908e-e1f8e92e6de9"
-":load_path" = "MLJ.GPClassifier"
+":load_path" = "MLJModels.GaussianProcesses_.GPClassifier"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/STOR-i/GaussianProcesses.jl"
@@ -295,7 +295,7 @@
 
 [Clustering.KMeans]
 ":package_uuid" = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
-":load_path" = "MLJ.KMeans"
+":load_path" = "MLJModels.Clustering_.KMeans"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/JuliaStats/Clustering.jl"
@@ -309,7 +309,7 @@
 
 [Clustering.KMedoids]
 ":package_uuid" = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
-":load_path" = "MLJ.KMedoids"
+":load_path" = "MLJModels.Clustering_.KMedoids"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/JuliaStats/Clustering.jl"
@@ -323,7 +323,7 @@
 
 [GLM.OLSRegressor]
 ":package_uuid" = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
-":load_path" = "MLJ.OLS"
+":load_path" = "MLJModels.GLM_.OLS"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/JuliaStats/GLM.jl"
