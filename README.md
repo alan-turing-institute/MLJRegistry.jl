@@ -28,5 +28,21 @@ for more on MLJ.
 
 ### How to register a package
 
-For now, new packages can be registered by creating an issue on this repository.
+For now, new packages can be registered by creating an issue on this repository. 
+
+
+#### For adminsistrators
+
+To register GreatNewPackage:
+
+- Clone the `MLJRegistry` repository, activate the clone's environment
+in the Julia package manager and `add GreatNewPackage` (which adds GreatNewPackage to MLJRegistry/Project.toml).
+
+- In a clean Julia REPL session, run `import MLJRegistry` and
+  `MLJRegistry.@update` (which updates the `Metadata.toml` and
+  `Models.toml` files).
+
+- Commit and push your changes to GitHub MLJRegistry repository master branch (or make a PR for review).
+
+
 

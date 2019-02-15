@@ -1,7 +1,4 @@
-MultivariateStats = ["RidgeRegressor", "PCA"]
 GaussianProcesses = ["GPClassifier"]
 DecisionTree = ["DecisionTreeClassifier"]
-unknown = ["Resampler", "SimpleDeterministicCompositeModel"]
-MLJ = ["DeterministicConstantClassifier", "DeterministicConstantRegressor", "DeterministicEnsembleModel", "KNNRegressor", "DeterministicTunedModel", "ConstantClassifier", "ConstantRegressor", "ProbabilisticTunedModel", "ProbabilisticEnsembleModel", "FeatureSelector", "OneHotEncoder", "Standardizer", "ToIntTransformer", "UnivariateBoxCoxTransformer", "UnivariateStandardizer"]
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor"]
