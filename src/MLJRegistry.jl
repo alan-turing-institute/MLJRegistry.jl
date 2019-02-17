@@ -76,7 +76,6 @@ macro update()
         $(MLJRegistry.package_import_commands...)
 
         modeltypes = MLJRegistry.finaltypes(MLJBase.Model)
-        @show modeltypes
         
         # generate and write to file the model metadata:
         packages = string.(MLJRegistry.packages)
