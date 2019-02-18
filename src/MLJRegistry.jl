@@ -46,17 +46,6 @@ function finaltypes(T::Type)
     end
 end
 
-const bar = :(import MLJBase)
-
-macro foo()
-    program = quote
-        $bar
-        println(MLJBase.Model)
-    end
-    __module__.eval(program)
-    quote end
-end
-
 const project_toml = joinpath(srcdir, "../Project.toml")
 const packages = map(Symbol, keys(TOML.parsefile(project_toml)["deps"])|>collect)
 filter!(packages) do pkg
@@ -105,7 +94,7 @@ macro update()
         end
     end
     __module__.eval(program)
-    "Done"
+    :(println("Local Metadata.toml updated."))
 end
 
 end # module
