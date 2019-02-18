@@ -57,7 +57,7 @@
 
 [GLM.OLSRegressor]
 ":package_uuid" = "38e38edf-8417-5370-95a0-9cbb8c7f171a"
-":load_path" = "MLJModels.GLM_.OLS"
+":load_path" = "MLJModels.GLM_.OLSRegressor"
 ":input_quantity" = ":multivariate"
 ":is_pure_julia" = ":yes"
 ":package_url" = "https://github.com/JuliaStats/GLM.jl"
