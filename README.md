@@ -22,8 +22,9 @@ MLJ is a Julia framework for combining and tuning machine learning
 models. To implement a model see the instructions in the MLJ document
 ["Implementing the MLJ interface for a learning
 algorithm"](https://github.com/alan-turing-institute/MLJ.jl/blob/master/doc/adding_new_models.md),
-and the [MLJ repo](https://github.com/alan-turing-institute/MLJ.jl)
-for more on MLJ.
+and the MLJ
+[CONTRIBUTE.md](https://github.com/alan-turing-institute/MLJ.jl) file.
+
 
 
 ### How to register a package
@@ -40,9 +41,10 @@ in the Julia package manager and `add GreatNewPackage` (which adds GreatNewPacka
 
 - In a clean Julia REPL session, run `import MLJRegistry` and
   `MLJRegistry.@update` (which updates the `Metadata.toml` and
-  `Models.toml` files).
+  `Models.toml` files). Quit your REPL session will now be polluted
+  with MLJ model types related objects.
 
-- Commit and push your changes to GitHub MLJRegistry repository master branch (or make a PR for review).
+- Commit and make a PR request at [MLJRegistry](https://github.com/alan-turing-institute/MLJRegistry.jl). Once merged, the new metadata is available to MLJ.
 
 
 
