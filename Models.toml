@@ -1,4 +1,4 @@
 GaussianProcesses = ["GPClassifier"]
 DecisionTree = ["DecisionTreeClassifier"]
 Clustering = ["KMeans", "KMedoids"]
-GLM = ["OLSRegressor"]
+GLM = ["OLSRegressor", "GLMCountRegressor"]
