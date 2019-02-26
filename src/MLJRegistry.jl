@@ -1,15 +1,29 @@
 module MLJRegistry
 
+export @update
+
 import TOML
 using InteractiveUtils
+
+# for testings decoding of metadata:
+import MLJBase: Found, Continuous, Discrete, OrderedFactor
+import MLJBase: FiniteOrderedFactor, Count, Multiclass, Binary
 
 const srcdir = dirname(@__FILE__) # the directory containing this file
 
 
-## METHODS TO ACCESS THE METADATA FROM ARCHIVE
+## METHODS TO WRITE THE METADATA TO THE ARCHIVE
 
-# for changing symbols to strings in dictionaries:
-encode(s) = s isa Symbol ? string(":", s) : s
+# for encoding metadata:
+function encode(s)
+    if s isa Symbol
+        return string(":", s)
+    elseif s isa AbstractString
+        return string(s)
+    else
+        return string("`", s, "`")
+    end
+end
 encode(v::Vector) = encode.(v)
 function encode(d::Dict)
     ret = Dict{}()
@@ -19,9 +33,20 @@ function encode(d::Dict)
     return ret
 end
 
-# for changing strings to symbols in dictionaries:
-decode(s) =
-    s isa String && !isempty(s) && s[1] == ':' ? Symbol(s[2:end]) : s
+# for decoding metadata:
+function decode(s::String)
+    if !isempty(s)
+        if  s[1] == ':'
+            return Symbol(s[2:end])
+        elseif s[1] == '`'
+            return eval(Meta.parse(s[2:end-1]))
+        else
+            return s
+        end
+    else
+        return ""
+    end
+end
 decode(v::Vector) = decode.(v)
 function decode(d::Dict)
     ret = Dict()
@@ -32,7 +57,7 @@ function decode(d::Dict)
 end
 
 # TODO: make these OS independent (../ not working on windows?)
-metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata.toml")) |> decode
+# metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata2.toml")) |> decode
 
 
 ## METHODS TO GENERATE METADATA AND WRITE TO ARCHIVE
@@ -80,7 +105,7 @@ macro update()
                 meta_given_package[pkg][modelname] = _info
             end
         end
-        open(joinpath(MLJRegistry.srcdir, "../Metadata.toml"), "w") do file
+        open(joinpath(MLJRegistry.srcdir, "../Metadata2.toml"), "w") do file
             TOML.print(file, MLJRegistry.encode(meta_given_package))
         end
         

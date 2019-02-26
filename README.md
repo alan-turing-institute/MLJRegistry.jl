@@ -40,9 +40,8 @@ To register GreatNewPackage:
 in the Julia package manager and `add GreatNewPackage` (which adds GreatNewPackage to MLJRegistry/Project.toml).
 
 - In a clean Julia REPL session, run `import MLJRegistry` and
-  `MLJRegistry.@update` (which updates the `Metadata.toml` and
-  `Models.toml` files). Quit your REPL session will now be polluted
-  with MLJ model types related objects.
+  `@update` (which updates the `Metadata.toml` and
+  `Models.toml` files). Quit your REPL session, which is now polluted.
 
 - Commit and make a PR request at [MLJRegistry](https://github.com/alan-turing-institute/MLJRegistry.jl). Once merged, the new metadata is available to MLJ.
 
