@@ -57,7 +57,7 @@ function decode_dic(d::Dict)
 end
 
 # TODO: make these OS independent (../ not working on windows?)
-# metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata2.toml")) |> decode_dic
+# metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata.toml")) |> decode_dic
 
 
 ## METHODS TO GENERATE METADATA AND WRITE TO ARCHIVE
@@ -105,7 +105,7 @@ macro update()
                 meta_given_package[pkg][modelname] = _info
             end
         end
-        open(joinpath(MLJRegistry.srcdir, "../Metadata2.toml"), "w") do file
+        open(joinpath(MLJRegistry.srcdir, "../Metadata.toml"), "w") do file
             TOML.print(file, MLJRegistry.encode_dic(meta_given_package))
         end
         
