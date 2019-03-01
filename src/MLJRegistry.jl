@@ -15,7 +15,7 @@ const srcdir = dirname(@__FILE__) # the directory containing this file
 ## METHODS TO WRITE THE METADATA TO THE ARCHIVE
 
 # for encoding metadata:
-function encode(s)
+function encode_dic(s)
     if s isa Symbol
         return string(":", s)
     elseif s isa AbstractString
@@ -24,17 +24,17 @@ function encode(s)
         return string("`", s, "`")
     end
 end
-encode(v::Vector) = encode.(v)
-function encode(d::Dict)
+encode_dic(v::Vector) = encode_dic.(v)
+function encode_dic(d::Dict)
     ret = Dict{}()
     for (k, v) in d
-        ret[encode(k)] = encode(v)
+        ret[encode_dic(k)] = encode_dic(v)
     end
     return ret
 end
 
 # for decoding metadata:
-function decode(s::String)
+function decode_dic(s::String)
     if !isempty(s)
         if  s[1] == ':'
             return Symbol(s[2:end])
@@ -47,17 +47,17 @@ function decode(s::String)
         return ""
     end
 end
-decode(v::Vector) = decode.(v)
-function decode(d::Dict)
+decode_dic(v::Vector) = decode_dic.(v)
+function decode_dic(d::Dict)
     ret = Dict()
     for (k, v) in d
-        ret[decode(k)] = decode(v)
+        ret[decode_dic(k)] = decode_dic(v)
     end
     return ret
 end
 
 # TODO: make these OS independent (../ not working on windows?)
-# metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata2.toml")) |> decode
+# metadata() = TOML.parsefile(joinpath(srcdir, "../", "Metadata2.toml")) |> decode_dic
 
 
 ## METHODS TO GENERATE METADATA AND WRITE TO ARCHIVE
@@ -106,7 +106,7 @@ macro update()
             end
         end
         open(joinpath(MLJRegistry.srcdir, "../Metadata2.toml"), "w") do file
-            TOML.print(file, MLJRegistry.encode(meta_given_package))
+            TOML.print(file, MLJRegistry.encode_dic(meta_given_package))
         end
         
         # generate and write to file list of models for each package:

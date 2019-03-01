@@ -12,4 +12,4 @@ d["a"] = "b"
 d[:f] = true
 d["j"] = :post
 
-@test MLJRegistry.decode(MLJRegistry.encode(d)) == d
+@test MLJRegistry.decode_dic(MLJRegistry.encode_dic(d)) == d
