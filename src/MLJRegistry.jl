@@ -76,6 +76,9 @@ const packages = map(Symbol, keys(TOML.parsefile(project_toml)["deps"])|>collect
 filter!(packages) do pkg
     !(pkg in [:TOML, :MLJ, :MLJBase, :MLJModels, :InteractiveUtils])
 end
+println("Packages to be searched for model implementations:")
+println(packages)
+
 const package_import_commands =  [:(import $pkg) for pkg in packages]
 
 macro update()
@@ -94,7 +97,7 @@ macro update()
         # generate and write to file the model metadata:
         packages = string.(MLJRegistry.packages)
         meta_given_package = Dict()
-        for pkg in packages
+        for pkg in packages2
             meta_given_package[pkg] = Dict()
         end
         for M in modeltypes
