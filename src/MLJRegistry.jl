@@ -97,7 +97,7 @@ macro update()
         # generate and write to file the model metadata:
         packages = string.(MLJRegistry.packages)
         meta_given_package = Dict()
-        for pkg in packages2
+        for pkg in packages
             meta_given_package[pkg] = Dict()
         end
         for M in modeltypes

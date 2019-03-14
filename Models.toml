@@ -1,5 +1,5 @@
 GaussianProcesses = ["GPClassifier"]
-DecisionTree = ["DecisionTreeClassifier"]
+DecisionTree = ["DecisionTreeRegressor", "DecisionTreeClassifier"]
 ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "SVMClassifier", "SVMLRegressor", "SVMNuRegressor", "SVMLClassifier"]
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor", "GLMCountRegressor"]
