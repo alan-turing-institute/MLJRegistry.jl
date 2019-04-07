@@ -21,7 +21,7 @@ Status](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl.svg?branch=ma
 MLJ is a Julia framework for combining and tuning machine learning
 models. To implement a model see the instructions in the MLJ document
 ["Implementing the MLJ interface for a learning
-algorithm"](https://github.com/alan-turing-institute/MLJ.jl/blob/master/doc/adding_new_models.md),
+algorithm"](https://github.com/alan-turing-institute/MLJ.jl/blob/master/doc/adding_models_for_general_use.md),
 and the MLJ
 [CONTRIBUTE.md](https://github.com/alan-turing-institute/MLJ.jl) file.
 
