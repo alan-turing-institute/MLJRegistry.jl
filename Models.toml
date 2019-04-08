@@ -4,3 +4,4 @@ ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "SVMClassifier", "SVMLRegresso
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor", "GLMCountRegressor"]
 NaiveBayes = ["GaussianNBClassifier", "MultinomialNBClassifier"]
+XGBoost = ["XGBoostCount", "XGBoostRegressor", "XGBoostClassifier"]
