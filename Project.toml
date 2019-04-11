@@ -12,13 +12,12 @@ InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 MLJBase = "a7f614a8-145f-11e9-1d2a-a57a1082229d"
 MLJModels = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 NaiveBayes = "9bbee03b-0db5-5f46-924f-b5c9c21b8c60"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 ScikitLearn = "3646fa90-6ef7-5e7e-9f22-8aca16db6324"
-TOML = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
 XGBoost = "009559a3-9522-5dbb-924b-0b6ed2b22bb9"
 
 [extras]
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Pkg", "Test"]
+test = ["Test"]

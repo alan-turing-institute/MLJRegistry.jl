@@ -200,9 +200,9 @@ version = "0.2.4"
 
 [[FastGaussQuadrature]]
 deps = ["Compat", "LinearAlgebra", "SpecialFunctions"]
-git-tree-sha1 = "3861ecfe06076f9310a43469fbb676aaeba7893d"
+git-tree-sha1 = "769ac4057ed875f433372e9a571a2cb86347d1be"
 uuid = "442a2c76-b920-505d-bb47-c5924d526838"
-version = "0.3.2"
+version = "0.3.3"
 
 [[ForwardDiff]]
 deps = ["CommonSubexpressions", "DiffResults", "DiffRules", "InteractiveUtils", "LinearAlgebra", "NaNMath", "Random", "SparseArrays", "SpecialFunctions", "StaticArrays", "Test"]
@@ -317,15 +317,15 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[MLJBase]]
 deps = ["CSV", "CategoricalArrays", "DataFrames", "Distributions", "InteractiveUtils", "Random", "SparseArrays", "Statistics", "StatsBase", "Tables"]
-git-tree-sha1 = "63d629c7676a531a45e5fa1c515630aa2f56ed79"
+git-tree-sha1 = "63dc804b8777bc1748aca7de94ce1227fa18be01"
 repo-rev = "master"
 repo-url = "https://github.com/alan-turing-institute/MLJBase.jl"
 uuid = "a7f614a8-145f-11e9-1d2a-a57a1082229d"
 version = "0.1.0"
 
 [[MLJModels]]
-deps = ["CategoricalArrays", "Distances", "Distributions", "LinearAlgebra", "MLJBase", "Random", "Requires", "TOML"]
-git-tree-sha1 = "24885c31930cd10949f25c5dfdb84b3b2ceb5728"
+deps = ["CategoricalArrays", "Distances", "Distributions", "LinearAlgebra", "MLJBase", "Pkg", "Random", "Requires"]
+git-tree-sha1 = "c76f6b90f433fe6f198cc921c5a4eefdcd43905e"
 repo-rev = "master"
 repo-url = "https://github.com/alan-turing-institute/MLJModels.jl"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
@@ -551,14 +551,6 @@ version = "0.5.0"
 deps = ["Libdl", "LinearAlgebra", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
 
-[[TOML]]
-deps = ["Dates"]
-git-tree-sha1 = "70c12a7129b147aa9e43325c86f32f7fbb88245a"
-repo-rev = "master"
-repo-url = "https://github.com/wildart/TOML.jl"
-uuid = "191fdcea-f9f2-43e0-b922-d33f71e2abc3"
-version = "0.4.0"
-
 [[TableTraits]]
 deps = ["IteratorInterfaceExtensions", "Test"]
 git-tree-sha1 = "eba4b1d0a82bdd773307d652c6e5f8c82104c676"
@@ -630,4 +622,4 @@ git-tree-sha1 = "f3f543992034dee07d15fec650a6c7afd2808f8d"
 repo-rev = "master"
 repo-url = "https://github.com/dmlc/XGBoost.jl"
 uuid = "009559a3-9522-5dbb-924b-0b6ed2b22bb9"
-version = "0.2.0+"
+version = "0.3.1+"

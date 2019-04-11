@@ -2,7 +2,7 @@ module MLJRegistry
 
 export @update
 
-import TOML
+import Pkg.TOML
 using InteractiveUtils
 
 # for testings decoding of metadata:
@@ -74,7 +74,7 @@ end
 const project_toml = joinpath(srcdir, "../Project.toml")
 const packages = map(Symbol, keys(TOML.parsefile(project_toml)["deps"])|>collect)
 filter!(packages) do pkg
-    !(pkg in [:TOML, :MLJ, :MLJBase, :MLJModels, :InteractiveUtils])
+    !(pkg in [:TOML, :MLJ, :MLJBase, :MLJModels, :InteractiveUtils, :Pkg])
 end
 println("Packages to be searched for model implementations:")
 println(packages)
