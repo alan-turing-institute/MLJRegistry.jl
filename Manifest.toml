@@ -314,13 +314,17 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[MLJBase]]
 deps = ["CSV", "CategoricalArrays", "DataFrames", "Distributions", "InteractiveUtils", "Random", "SparseArrays", "Statistics", "StatsBase", "Tables"]
-git-tree-sha1 = "63dc804b8777bc1748aca7de94ce1227fa18be01"
+git-tree-sha1 = "b033e2496bb1f54fd2552f3b6b02c23d47f15cf6"
+repo-rev = "master"
+repo-url = "https://github.com/alan-turing-institute/MLJBase.jl"
 uuid = "a7f614a8-145f-11e9-1d2a-a57a1082229d"
-version = "0.1.0"
+version = "0.1.1"
 
 [[MLJModels]]
 deps = ["CategoricalArrays", "Distances", "Distributions", "LinearAlgebra", "MLJBase", "Pkg", "Random", "Requires"]
-git-tree-sha1 = "d429d159b4a3c896d6c868ef030a37044fa09ed0"
+git-tree-sha1 = "581ffd3e7547ff762d420be2403d9701291f58ee"
+repo-rev = "master"
+repo-url = "https://github.com/alan-turing-institute/MLJModels.jl"
 uuid = "d491faf4-2d78-11e9-2867-c94bc002c0b7"
 version = "0.1.0"
 
