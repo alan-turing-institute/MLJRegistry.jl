@@ -16,5 +16,12 @@ Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 ScikitLearn = "3646fa90-6ef7-5e7e-9f22-8aca16db6324"
 XGBoost = "009559a3-9522-5dbb-924b-0b6ed2b22bb9"
 
+[compat]
+MLJBase = "0.1.1"
+MLJModels = "0.1.1"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
