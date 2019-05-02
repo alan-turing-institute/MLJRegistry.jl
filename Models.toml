@@ -1,7 +1,6 @@
-GaussianProcesses = ["GPClassifier"]
 DecisionTree = ["DecisionTreeRegressor", "DecisionTreeClassifier"]
 ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "SVMClassifier", "SVMLRegressor", "SVMNuRegressor", "SVMLClassifier"]
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor", "GLMCountRegressor"]
-NaiveBayes = ["GaussianNBClassifier", "MultinomialNBClassifier"]
 XGBoost = ["XGBoostCount", "XGBoostRegressor", "XGBoostClassifier"]
+NaiveBayes = ["GaussianNBClassifier", "MultinomialNBClassifier"]

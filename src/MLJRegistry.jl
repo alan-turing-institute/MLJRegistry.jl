@@ -74,7 +74,7 @@ end
 const project_toml = joinpath(srcdir, "../Project.toml")
 const packages = map(Symbol, keys(TOML.parsefile(project_toml)["deps"])|>collect)
 filter!(packages) do pkg
-    !(pkg in [:TOML, :MLJ, :MLJBase, :MLJModels, :InteractiveUtils, :Pkg])
+    !(pkg in [:MLJ, :MLJBase, :MLJModels, :InteractiveUtils, :Pkg])
 end
 println("Packages to be searched for model implementations:")
 println(packages)
@@ -87,8 +87,8 @@ macro update()
         
         import MLJBase
         import MLJModels
-        import TOML
-
+        using Pkg.TOML
+        
         # import the packages
         $(MLJRegistry.package_import_commands...)
 
