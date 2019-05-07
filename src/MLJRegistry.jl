@@ -6,8 +6,8 @@ import Pkg.TOML
 using InteractiveUtils
 
 # for testings decoding of metadata:
-import MLJBase: Found, Continuous, Discrete, OrderedFactor
-import MLJBase: FiniteOrderedFactor, Count, Multiclass, Binary
+import MLJBase: Found, Continuous, Finite, Infinite
+import MLJBase: OrderedFactor, Count, Multiclass, Binary
 
 const srcdir = dirname(@__FILE__) # the directory containing this file
 

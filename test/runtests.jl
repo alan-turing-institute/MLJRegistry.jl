@@ -11,7 +11,7 @@ using MLJBase
 #@test !(isempty(MLJRegistry.metadata()))
 
 d = Dict()
-d[:test] = Tuple{Union{Continuous,Missing},Discrete}
+d[:test] = Tuple{Union{Continuous,Missing}, Finite}
 d["junk"] = Dict{Any,Any}("H" => Missing, :cross => "lemon", :t => :w, "r" => "r")
 d["a"] = "b"
 d[:f] = true
