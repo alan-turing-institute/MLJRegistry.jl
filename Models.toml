@@ -1,5 +1,5 @@
 DecisionTree = ["DecisionTreeRegressor", "DecisionTreeClassifier"]
-ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "SVMClassifier", "SVMLRegressor", "SVMNuRegressor", "SVMLClassifier"]
+ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "ElasticNet", "ElasticNetCV", "SVMClassifier", "SVMLRegressor", "SVMNuRegressor", "SVMLClassifier"]
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor", "GLMCountRegressor"]
 XGBoost = ["XGBoostCount", "XGBoostRegressor", "XGBoostClassifier"]
