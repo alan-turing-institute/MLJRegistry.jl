@@ -1,6 +1,7 @@
+MultivariateStats = ["RidgeRegressor", "PCA"]
 DecisionTree = ["DecisionTreeRegressor", "DecisionTreeClassifier"]
 ScikitLearn = ["SVMRegressor", "SVMNuClassifier", "ElasticNet", "ElasticNetCV", "SVMClassifier", "SVMLRegressor", "SVMNuRegressor", "SVMLClassifier"]
 Clustering = ["KMeans", "KMedoids"]
 GLM = ["OLSRegressor", "GLMCountRegressor"]
-XGBoost = ["XGBoostCount", "XGBoostRegressor", "XGBoostClassifier"]
 NaiveBayes = ["GaussianNBClassifier", "MultinomialNBClassifier"]
+XGBoost = ["XGBoostCount", "XGBoostRegressor", "XGBoostClassifier"]
