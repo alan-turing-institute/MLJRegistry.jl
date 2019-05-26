@@ -17,7 +17,7 @@
 ":input_is_multivariate" = "`true`"
 ":package_uuid" = "6f286f6a-111f-5878-ab1e-185364afe411"
 ":output_scitype_union" = "`MLJBase.Continuous`"
-":load_path" = "MLJModels.MultivariateStats_.RidgeRegressor"
+":load_path" = "MLJModels.MultivariateStats_.PCA"
 ":is_pure_julia" = "`true`"
 ":is_supervised" = "`false`"
 ":package_url" = "https://github.com/JuliaStats/MultivariateStats.jl"
