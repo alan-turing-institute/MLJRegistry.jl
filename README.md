@@ -12,8 +12,8 @@ immediately available for use by MLJ. However, models in
 *registered* packages are discoverable by all MLJ users - whether or not the packages have been imported - through MLJ's
 task interface.
 
-[![Build
-Status](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl.svg?branch=master)](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl)
+<!-- [![Build -->
+<!-- Status](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl.svg?branch=master)](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl) -->
 
 
 ### Background
