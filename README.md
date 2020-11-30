@@ -18,7 +18,7 @@ immediately available for use by MLJ. However, models in
 task interface.
 
 [![Build
-Status](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl.svg?branch=master)](https://travis-ci.com/alan-turing-institute/MLJRegistry.jl)
+Status](https://github.com/alan-turing-institute/MLJRegistry.jl/workflows/CI/badge.svg)](https://github.com/alan-turing-institute/MLJRegistry.jl/actions)
 
 
 ### Background
