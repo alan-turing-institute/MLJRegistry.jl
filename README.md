@@ -1,8 +1,8 @@
 ## MLJRegistry
 
-**This repository is now defunct.**
+**This repository is now deprecated.**
 
-The MLJ model registry now lives in [MLJ](https://github.com/alan-turing-institute/MLJ.jl) itself at  [this location](https://github.com/alan-turing-institute/MLJ.jl/tree/master/src/registry).
+The MLJ model registry now lives at [MLJModels](https://github.com/JuliaAI/MLJModels.jl).
 
 
 A package registry for the Julia machine learning framework
